@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // question 1
+    function is_array(a) {
+        return Array.isArray(a);
+    }
+
+    // question 2
+    function array_clone(a) {
+                             
+        var b=a.valueOf()
+        return b;  //    return {...a}; (another method) 
+       
+    }
+
+    // question 5
+   function firstN(arr,n=0){
+        var len=arr.length;
+        if(n<0||len===0){
+            return [];
+        }
+        else if(n>len){
+            return arr ;
+        }
+        else {
+            arr.slice(0,n);
+        }
+    }
+
+//  question 4 
+    function Array_to_string(a) {
+        return a.toString();
+    }
+
+// question 5
+    function frequancy() {
+        var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+       var maxfre=0;
+       var item=null;
+        for (i = 0; i < a.length; i++) {
+            var count=1;
+            for (j = i + 1; j < a.length; j++) {
+                
+                    if (a[i] === a[j])
+                        {
+                            count++;
+                        }
+                
+            }
+            if (maxfre<count) {
+                        maxfre=count;
+                        item=a[i];
+                    }
+        }
+        console.log(item+"is reapting for max times: "+maxfre)
+    }
+    
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
