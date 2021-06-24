@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: orangered;
+}
+.nav{
+    display: flex ;
+    justify-content: space-around;
+    height: 100px;
+    margin: 0;
+    color: white;
+    
+}
+.score{
+    margin-top: 30px;
+}
+.container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    
+}
+.seats{
+    margin: 2px;
+    height: 100px;
+    width: 280px;
+    background-color: rgba(255, 153, 0, 0.932);
+    
+}
+.seats:hover{
+    background-color: rgba(255, 68, 0, 0.623);
+}
