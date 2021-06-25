@@ -5,7 +5,7 @@
 .body{
     background-color: orangered;
 }
-.body1{
+.bodyaftertoggle{
     background-color:rgb(87, 87, 219);
 }
 .nav{
@@ -28,23 +28,26 @@
     overflow: hidden;
     
 }
-.seats{
+.seat{
     margin: 2px;
     height: 100px;
     width: 280px;
     background-color: rgba(255, 153, 0, 0.932);
     
 }
-.seats2{
+.seataftertoggle{
+    margin: 2px;
+    height: 100px;
+    width: 280px;
     background-color: dodgerblue;
 }
-.seats:hover{
+.seat:hover{
     opacity: 0.8;
 }
-.after{
+.afterclicked1{
     background-color: rgb(238, 72, 12);
 }
-.after1{
+.afterclicked2{
     background-color: rgba(8, 75, 141, 0.925);
 }
 .theme{
