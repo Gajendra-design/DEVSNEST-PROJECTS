@@ -1,8 +1,12 @@
 body{
-   background-image: url('photos/body2.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+    background-image: url('photos/body2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+html{
+    height: 100vh;
+    cursor: url("photos/curser.jpg"),auto;
 }
 h1{
     text-align: center;
@@ -12,20 +16,19 @@ h1{
 .container{
     display: grid;
     grid-template-columns: repeat(4,auto);
-    grid-template-rows: repeat(4,auto);
     grid-gap: 10px;
-    justify-content: center; 
-    perspective: 1000px; 
+    justify-content: center;
+    perspective: 1000px;
 }
 .card{
     background-color: transparent;
     height: 125px;
     width: 100px;
-    perspective: 1000px;
+    /* perspective: 1000px; */
 }
 .game-info{
     display: flex;
-    grid-column: 1/6;
+    grid-column: 1/-1;
     color: white;
     font-size: 3em;
     justify-content: space-between;
@@ -34,14 +37,25 @@ h1{
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform  0.8s;
+    transition: all  0.8s cubic-bezier(0.67, 0.51, 0, 1.01);
     transform-style: preserve-3d;
 }
-.card:hover .inner{
-    transform: rotateY(180deg);
+/* .card:hover .inner{
+    transform: scale(1.09);
+} */
+.rotate-front{
+   transform: rotateY(180deg);
+}
+.match-card{
+    display: none;
 }
 
+/* .card:active .inner{
+    transform: rotateY(180deg);
+} */
+
 .frontend-card, .backend-card{
+    
     position: absolute;
     height: 100%;
     width: 100%;
@@ -49,7 +63,39 @@ h1{
     -webkit-backface-visibility: hidden;
 }
 .backend-card{
-    background-image: url('photos/first.jpg');
-    background-size: 125px 100px;
     transform: rotateY(180deg);
+}
+/* .page-over{
+    display: none;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    color: rgb(206, 2, 2);
+    animation: over-page 500ms forwards;
+}
+@keyframes page-over{
+    from{
+        background-color: rgba(0,0,0,0);
+        font-size: 0;
+    }
+    to{
+        background-color: rgba(0,0,0,.8);
+        font-size: 10em;
+    }
+} */
+@media (max-width:600px){
+    .container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .game-info{
+        flex-direction: column;
+        align-items: center;
+    }
 }
