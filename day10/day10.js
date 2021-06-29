@@ -2,7 +2,6 @@ let inner=document.querySelectorAll(".inner");
 let moves=document.querySelectorAll("span")
 let i=1;
 let count=0;
-
 let cardset={first: 1,second: 1};
 inner.forEach((card,index)=> {
     card.addEventListener('click',()=>{
@@ -33,5 +32,18 @@ inner.forEach((card,index)=> {
         
     })
 }) 
+
+let timeleft=moves[0].innerHTML;
+setInterval(()=>{
+    if(timeleft<=0){
+        alert("game over")
+        timeleft=102;
+        console.log(timeleft);
+        location.reload();
+    }
+    moves[0].innerHTML=timeleft-1;
+    timeleft--;
+    console.log(timeleft);
+},1000)
 
 
