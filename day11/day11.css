@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: inline-block;
+    position: relative;
+    margin: 5% 25% ;
+}
+.maincontainer{
+    display: inline-flex;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+}
+.timecontainer{
+    position: absolute;
+    font-size: 35px;
+    top: -7%;
+    right: 0;
+}
+.buttoncontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 440px;
+}
+button{
+    width: 60px;
+    height: 40px;
+    align-content: center;
+}
+.qnacontainer{
+   position: absolute;
+   background-color: skyblue;
+   height: 50%;
+   width: 100%;
+   align-content: center;
+}
