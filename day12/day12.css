@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(56, 42, 173);
+}
+.container{
+    position: relative;
+    display: inline-block;
+    min-height: 300px;
+    min-width: 300px;
+    /* background-color: rgb(103, 90, 224); */
+    margin: 10% 35%;
+}
+.heading{
+    text-align: center;
+    color: white;
+}
+.search-form{
+    position: absolute;
+    left: 20%;
+    background-color: rgb(0, 0, 0,0.2);
+}
+ul{
+    position: absolute;
+    top: 35%;
+}
+.todo{
+    list-style: none;
+    padding: 5px;
+    width: 250%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0,0.2);
+    color: white;
+}
+.icon{
+    cursor: pointer;
+}
+label{
+    display: block;
+    text-align: center;
+    color: white;
+}
+.add-form{
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+}
+input{
+    background-color: rgb(0, 0, 0,0.2);
+    border: 0px;
+    padding: 5px;
+    color: white;
+}
