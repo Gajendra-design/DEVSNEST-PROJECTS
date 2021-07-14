@@ -1,6 +1,6 @@
 const outerdiv=document.querySelector('.container');
 const template=`<div class="inner"></div>`;
-for(let i=0;i<1600;i++){
+for(let i=0;i<1360;i++){
     outerdiv.innerHTML+=template;
 }
 const innerdiv=document.querySelectorAll('.inner');
