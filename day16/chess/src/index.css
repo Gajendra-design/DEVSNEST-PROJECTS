@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.chessboard {
+  display: inline-block;
+  height: 235px;
+  width: 235px;
+  margin: 15% 40%;
+}
+.evenline,
+.oddline {
+  display: inline-block;
+  margin: -4px;
+}
+.zero,
+.one,
+.even,
+.odd {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+.zero,
+.odd {
+  background-color: black;
+}
+.one,
+.even {
+  background-color: white;
+}
