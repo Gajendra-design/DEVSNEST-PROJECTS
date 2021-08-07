@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <!-- input field -->
+        <form>
+            <label for="city">enter city name </label>
+            <input type="text" 
+            name="city" 
+           >
+        </form>
+
+    <!-- weather information card -->
+        <div class="card visibility">
+            <div class="img">
+          <img class="backround" src="https://via.placeholder.com/200x200" alt="shit">
+        </div>
+          <div class="icon">
+        <img src="" alt="">
+        </div>
+        <div class="details">
+            <h5 class="city-name">city name</h5>
+            <div class="weather-condition">weather condition</div>
+            <div class="temprature">
+                <span>temp</span>
+                <span>&deg;C</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
